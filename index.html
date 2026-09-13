@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
+
     <style>
         /* ==========================================
            COLOR PALETTE & CSS VARIABLES
            ========================================== */
         :root {
-            --primary: #1e293b;         /* Deep slate navy */
-            --accent: #d97706;          /* Warm amber/gold accent */
-            --accent-hover: #b45309;    /* Darker amber */
-            --accent-soft: #fef3c7;     /* Soft gold background tint */
-            --bg-main: #f8fafc;         /* Off-white background */
-            --card-bg: #ffffff;         /* Pure white cards */
-            --text-main: #334155;       /* Main text color */
-            --text-muted: #64748b;      /* Muted text color */
-            --border-color: #e2e8f0;    /* Soft borders */
+            --primary: #1e293b;
+            /* Deep slate navy */
+            --accent: #d97706;
+            /* Warm amber/gold accent */
+            --accent-hover: #b45309;
+            /* Darker amber */
+            --accent-soft: #fef3c7;
+            /* Soft gold background tint */
+            --bg-main: #f8fafc;
+            /* Off-white background */
+            --card-bg: #ffffff;
+            /* Pure white cards */
+            --text-main: #334155;
+            /* Main text color */
+            --text-muted: #64748b;
+            /* Muted text color */
+            --border-color: #e2e8f0;
+            /* Soft borders */
             --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
             --radius: 12px;
         }
@@ -310,7 +320,7 @@
         /* 3D Flip Card Styles */
         .card-container {
             perspective: 1000px;
-            min-height: 280px;
+            min-height: 390px;
         }
 
         .card-inner {
@@ -325,7 +335,8 @@
             transform: rotateY(180deg);
         }
 
-        .card-front, .card-back {
+        .card-front,
+        .card-back {
             position: absolute;
             top: 0;
             left: 0;
@@ -349,6 +360,16 @@
             border-color: var(--accent-soft);
         }
 
+        .card-image {
+            width: 100%;
+            height: 145px;
+            object-fit: cover;
+            border-radius: 9px;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-color);
+            display: block;
+        }
+
         .card-tag {
             font-size: 0.75rem;
             font-weight: 700;
@@ -359,13 +380,15 @@
             display: block;
         }
 
-        .card-front h3, .card-back h3 {
+        .card-front h3,
+        .card-back h3 {
             font-size: 1.1rem;
             color: var(--primary);
             margin-bottom: 10px;
         }
 
-        .card-front p, .card-back p {
+        .card-front p,
+        .card-back p {
             font-size: 0.92rem;
             color: var(--text-muted);
             line-height: 1.6;
@@ -538,15 +561,26 @@
             .gallery-grid-3 {
                 grid-template-columns: 1fr;
             }
+
             .nav-links {
                 display: none;
             }
-            header.hero h1 { font-size: 2.2rem; }
-            .main-card { padding: 24px; }
-            .card-container { min-height: 300px; }
+
+            header.hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .main-card {
+                padding: 24px;
+            }
+
+            .card-container {
+                min-height: 410px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- 1. TOP NAVIGATION BAR -->
@@ -565,7 +599,7 @@
     </nav>
 
     <div class="container">
-        
+
         <!-- 2. HERO HEADER WITH GABE'S CIRCULAR PROFILE AVATAR -->
         <header class="hero">
             <img src="Gabelee.jpg" alt="Gabe Lee" class="profile-avatar">
@@ -579,7 +613,7 @@
         <!-- 3. WEEKLY SNAPSHOTS -->
         <section id="snapshots" class="gallery-section">
             <h2 class="section-title">Weekly Snapshots</h2>
-            
+
             <div class="gallery-grid-3">
                 <div class="gallery-item">
                     <img src="goodbye1.jpeg" alt="goodbye card">
@@ -587,13 +621,13 @@
                 </div>
 
                 <div class="gallery-item">
-                    <img src="exercise.JPEG" alt="Exercise">
+                    <img src="exercise.jpeg" alt="Exercise">
                     <div class="gallery-caption">Exercise</div>
                 </div>
 
                 <div class="gallery-item">
                     <img src="breakfast.jpeg" alt="Healthy Meal">
-                    <div class="gallery-caption">Healthy Meals</div>
+                    <div class="gallery-caption">Healthy Breakfast</div>
                 </div>
             </div>
         </section>
@@ -601,19 +635,16 @@
         <!-- 4. MAIN WRITING SECTION -->
         <section id="main-story" class="main-card">
             <h2 class="section-title">This Week's Story</h2>
-            
+
             <article class="main-story">
                 <p class="dropcap">
-                    What a whirlwind of a week it has been! Between crisp autumn walks in the neighborhood park and tackling our garden clean-up before winter hits, we barely had time to sit down. The trees are finally turning bright yellow and crimson, which made Saturday's morning stroll absolutely stunning.
-                </p>
+                    What a whirlwind of a week it has been! Between Christine’s departure for Korea and tackling many work-related tasks—including working toward the Google Generative AI Professional Certificate—as well as taking care of household responsibilities such as arranging a deck renovation contract before winter arrives, preparing daily meals, doing laundry, watering the plants, and driving the Camry, I barely had time to slow down. The weather is finally cooling down, which allows me to spend more time outside and go running.&nbsp;</p>
                 <p>
-                    The big highlight this week was hosting Sunday dinner for Mom's birthday. We tried out a new slow-cooked roast beef recipe, and safe to say, there were zero leftovers! The kids spent most of the afternoon building a massive leaf pile in the backyard—though I think they spent more time jumping into it than actually cleaning up the lawn.
-                </p>
+                    The highlight of this week was adjusting to life on my own. I have spent most of my life living with my spouse, but for the next two and a half months, I need to find a way to live well by myself. Having things to focus on—such as work, church, running, and household responsibilities—certainly helps. I also decided to create this website to share my life with my family. This is something new for me, but I enjoy doing it, whether you like it or not!&nbsp;</p>
+                <p> The biggest challenge this week was having trouble sleeping after Christine left for Korea. Of course, I have struggled with sleep issues for the past several months, so this is not entirely new to me, although I still do not like it at all. I have not yet figured out how to fall asleep more quickly and sleep better. I believe that God is the one who can ultimately help me overcome these mental struggles. Another ongoing challenge is managing everything by myself. There are so many things competing for every minute of my day, both at work and at home. I need to standardize and simplify my daily routine. And, of course, I already miss Christine a lot.&nbsp;</p>
                 <p>
-                    In other news, Leo officially started his weekend soccer league! He scored his first goal on Sunday morning, and the look of pure joy on his face was easily the best moment of my week.
-                </p>
-            </article>
-        </section>
+                    I plan to share my story every week, and I hope you find something interesting in my weekly updates. You are certainly welcome to share your own stories with us as well. I can create a website for you—it is much easier now because of generative AI. In any case, just let me know!&nbsp;</p>   </article>
+            </section>
 
         <!-- 5. THIS WEEK'S BIBLE VERSE -->
         <section id="bible-verse">
@@ -621,25 +652,26 @@
             <div class="bible-verse-card">
                 <span class="verse-icon">📖</span>
                 <blockquote>
-                    "Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think about such things."
+                    "T<span style="color: rgb(18, 18, 18); font-family: 'Playfair Display', sans-serif; font-size: 1.3rem; font-style: italic; background-color: initial;">he LORD is my rock, my fortress and my deliverer; my God is my rock, in whom I take refuge, my shield and the horn of my salvation, my stronghold.</span>"
                 </blockquote>
-                <div class="reference">— Philippians 4:8 (NIV)</div>
+                <div class="reference">— PSALMS 18:2 (NIV)</div>
             </div>
         </section>
 
         <!-- 6. INTERESTING THINGS OF THE WEEK -->
         <section id="interesting-things" class="interesting-section">
             <h2 class="section-title">Interesting Things of the Week</h2>
-            
+
             <div class="interesting-grid">
-                
+
                 <!-- Item 1 Card -->
                 <div class="card-container">
                     <div class="card-inner">
                         <div class="card-front">
                             <div>
-                                <span class="card-tag">🎙️ Podcast Recommendation</span>
-                                <h3>How Stuff Works: The History of Autumn</h3>
+                                <img src="goodbye1.jpeg" alt="Goodbye card for Christine" class="card-image">
+                                <span class="card-tag">🎙️ CHRISTINE'S DEPARTURE</span>
+                                <h3>Safe and Fun Travels!</h3>
                                 <p>A fun 20-minute listen on why leaves change colors and how fall traditions started around the world.</p>
                             </div>
                             <button class="read-more-btn" onclick="toggleFlip(this)">Read More &rarr;</button>
@@ -661,6 +693,7 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <div>
+                                <img src="exercise.jpeg" alt="Outdoor exercise during the cooler weather" class="card-image">
                                 <span class="card-tag">💡 Cool Fact</span>
                                 <h3>Why Do Autumn Leaves Turn Red?</h3>
                                 <p>Trees stop producing green chlorophyll, revealing the yellow pigments that were hidden all summer long!</p>
@@ -683,6 +716,7 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <div>
+                                <img src="breakfast.jpeg" alt="Healthy breakfast" class="card-image">
                                 <span class="card-tag">🍳 Recipe We Tried</span>
                                 <h3>Cinnamon Apple Crisp</h3>
                                 <p>Made this with fresh apples picked from the orchard over the weekend. Quick 30-minute oven bake!</p>
@@ -707,9 +741,9 @@
         <!-- 6b. INTERESTING NEWS FOR THE FAMILY MEMBERS -->
         <section id="family-news" class="family-news-section">
             <h2 class="section-title">Interesting News for the Family Members</h2>
-            
+
             <div class="family-news-grid">
-                
+
                 <!-- Christine's Card -->
                 <div class="family-card">
                     <div class="family-card-image">
@@ -754,7 +788,9 @@
             <h3>Want to see all photo albums & videos?</h3>
             <p>I uploaded high-resolution videos and full photo albums from this week to our shared Google Drive folder.</p>
             <a href="https://drive.google.com/drive/folders/175DnPhyXgxRCvV1c9weQf_Orys8NhSeQ" target="_blank" class="btn-drive">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z" />
+                </svg>
                 Open Gabe Google Drive Album
             </a>
         </div>
@@ -775,4 +811,5 @@
         }
     </script>
 </body>
+
 </html>
